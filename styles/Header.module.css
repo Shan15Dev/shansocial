@@ -1,0 +1,8 @@
+.grid{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.textPaddingLeft{
+    padding-left: 2%;
+}
