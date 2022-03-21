@@ -1,5 +1,4 @@
 import styles from "../styles/Home.module.css";
-import {Login} from "../lib/Login.js";
 
 
 export default function Home() {
