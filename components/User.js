@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import style from '../styles/User.module.css'
 
 export default function User({ session }) {
     return (
@@ -7,11 +7,11 @@ export default function User({ session }) {
                 session.user && 
                 <div>
                     <p>{session.user.name}</p>
-                    <button onClick={session.logout}>LogOut</button>
+                    <button onClick={session.logout} className={style.loginButtons}>LogOut</button>
                 </div>
             }
             {
-                !session.user && <a href="/login"><button>Log In</button></a>
+                !session.user && <a href="/login"><button className={`${style.loginButtons} ${style.marginTop18perc}`}>Log In</button></a>
             }
         </div>
     )
