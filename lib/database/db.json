@@ -18,5 +18,12 @@
       "name": "test3",
       "id": 3
     }
+  ],
+  "posts" : [
+    {
+      "id" : 1,
+      "text" : "Hello. This is my first post on ShanSocial",
+      "name" : "testuser"
+    }
   ]
 }
