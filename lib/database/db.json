@@ -23,7 +23,8 @@
     {
       "id" : 1,
       "text" : "Hello. This is my first post on ShanSocial",
-      "name" : "testuser"
+      "name" : "testuser",
+      "postDate": "2022-03-22"
     }
   ]
 }

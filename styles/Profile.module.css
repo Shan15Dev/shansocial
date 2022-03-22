@@ -1,3 +1,22 @@
 .center{
     text-align: center;
 }
+
+.paddingTop{
+    padding: 0.5%;
+}
+
+.articleMarginTop{
+    margin-top: 2%;
+}
+
+.box{
+    background-color: #4fbce0;
+    padding: 1%;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.box:hover{
+    transform: scale(1.5);
+}
