@@ -26,6 +26,9 @@ export default function ProfilePage({ session }) {
                 return (
                     <article className={`${style.center} ${style.paddingTop} ${style.articleMarginTop}`} key={post.id}>
                         <p>{post.postDate} <span className={style.box}>{post.text}</span> <span><Link href={`/posts/${post.id}/edit`}>Edit</Link></span></p>
+                        {post.picturePath &&
+                            <img src={post.picturePath} className={style.pictureSize}/>
+                        }
                     </article>
                 )
             })}

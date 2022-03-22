@@ -25,7 +25,7 @@
       "text": "Hello. This is my first post on ShanSocial",
       "name": "testuser",
       "postDate": "2022-03-22",
-      "userId" : 1
+      "userId": 1
     },
     {
       "text": "asdfasdf",
@@ -40,6 +40,14 @@
       "name": "testuser",
       "userId": 1,
       "id": 3
+    },
+    {
+      "text": "test",
+      "postDate": "2022-3-22",
+      "name": "testuser",
+      "userId": 1,
+      "picturePath": "/88b1072c-e4b0-4645-bb7a-d2262b033a3d.jpeg",
+      "id": 4
     }
   ]
 }
