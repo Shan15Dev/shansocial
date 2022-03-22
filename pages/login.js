@@ -21,6 +21,10 @@ export default function LoginScreen({ session }) {
     console.log(session)
   };
 
+  const register = (e) => {
+    router.push("/register")
+  }
+
   return (
     <div>
       <div className={styles.form}>
@@ -50,6 +54,7 @@ export default function LoginScreen({ session }) {
           <input
             type="submit"
             className={`${styles.submit} ${styles.marginLeft5percent}`}
+            onClick={(e) => register()}
             value="Register"
           ></input>
         </div>

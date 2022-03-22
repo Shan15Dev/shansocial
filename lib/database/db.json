@@ -1,11 +1,22 @@
 {
-
   "users": [
     {
       "id": 1,
       "email": "test@test.ch",
       "password": "$2a$12$fzsVJt6utxwe7T6kYaJnDOQMXF/ygBUSTvpd06f4o39bN.2uYz7aS",
       "name": "testuser"
+    },
+    {
+      "email": "test2@test.ch",
+      "password": "$2a$10$h1Cl3pEFc/4C7wnKpWl3W.0tJ3K6e5xF10eB7gRrPXMEF3RTwfU9S",
+      "name": "test2",
+      "id": 2
+    },
+    {
+      "email": "test3@test.ch",
+      "password": "$2a$10$XHi3cMEwOyz88GfNj01vvuAZMA9puff0IOzuQdz4GDRXOlcOFV6mW",
+      "name": "test3",
+      "id": 3
     }
   ]
 }

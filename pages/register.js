@@ -10,15 +10,14 @@ export default function RegisterScreen({ session }) {
     const [passwordInput, setPasswordInput] = useState("");
     const [nameInput, setNameInput] = useState("");
 
-    const register = async (e) => {
+    const submit = async (e) => {
         const model = {
-            email: emailInput,
             name: nameInput,
+            email: emailInput,
             password: passwordInput,
         };
-        const resp = await register(model);
+        await register(model);
 
-        session.register(resp);
         router.push("/login");
         console.log(session)
     };
@@ -55,7 +54,7 @@ export default function RegisterScreen({ session }) {
                         type="submit"
                         className={`${styles.submit} ${styles.marginLeft5percent}`}
                         value="Register"
-                        onClick={(e) => register()}
+                        onClick={(e) => submit()}
                     ></input>
                 </div>
             </div>
