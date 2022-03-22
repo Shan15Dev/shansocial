@@ -19,6 +19,7 @@ export default function User({ session }) {
                 session.user &&
                 <div>
                     <div className={style.grid}>
+                        <img src={session.user.picturePath} className={style.pictureSet} />
                         <p>{session.user.name}</p>
                         <button className={style.loginButtons} onClick={(e) => goToHome()}>Home</button>
                         <button className={style.loginButtons} onClick={(e) => goToProfile()}>Profile</button>
