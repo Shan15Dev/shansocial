@@ -3,14 +3,14 @@ import style from '../styles/User.module.css'
 
 export default function User({ session }) {
     const router = useRouter()
-    const goToProfile = (e) =>{
+    const goToProfile = (e) => {
         router.push("/profile")
     }
 
-    const goToCreate = (e) =>{
+    const goToCreate = (e) => {
         router.push("/create")
     }
-    const goToHome = (e) =>{
+    const goToHome = (e) => {
         router.push("/")
     }
     return (
