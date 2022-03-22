@@ -6,6 +6,13 @@ export default function User({ session }) {
     const goToProfile = (e) =>{
         router.push("/profile")
     }
+
+    const goToCreate = (e) =>{
+        router.push("/create")
+    }
+    const goToHome = (e) =>{
+        router.push("/")
+    }
     return (
         <div>
             {
@@ -13,8 +20,10 @@ export default function User({ session }) {
                 <div>
                     <div className={style.grid}>
                         <p>{session.user.name}</p>
-                        <button onClick={session.logout} className={style.loginButtons}>LogOut</button>
+                        <button className={style.loginButtons} onClick={(e) => goToHome()}>Home</button>
                         <button className={style.loginButtons} onClick={(e) => goToProfile()}>Profile</button>
+                        <button className={style.loginButtons} onClick={(e) => goToCreate()}>Create</button>
+                        <button onClick={session.logout} className={style.loginButtons}>LogOut</button>
                     </div>
                 </div>
             }
