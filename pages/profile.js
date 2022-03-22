@@ -14,12 +14,15 @@ export default function ProfilePage({ session }) {
         setPosts(response)
     }, [])
 
-    return(
+    return (
         <div>
+            <header>
+                <title>Profile - {session.user.name}</title>
+            </header>
             <h1 className={style.center}>{session.user.name}</h1>
             <p className={style.center}>{session.user.email}</p>
             {posts.map((post) => {
-                return(
+                return (
                     <article className={`${style.center} ${style.paddingTop} ${style.articleMarginTop}`} key={post.id}>
                         <p>{post.postDate} <span className={style.box}>{post.text}</span></p>
                     </article>
