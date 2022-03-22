@@ -7,7 +7,7 @@ export default function Home({session}) {
         {
           session.user &&
           <div>
-            <h1>LogedIn</h1>
+            <h1>LoggedIn</h1>
           </div>
         }
     </div>

@@ -11,9 +11,9 @@ export default function MyApp({ Component, pageProps }) {
   };
   return (
     <div>
-      <Head>
-        <Header />
-      </Head>
+      <header>
+        <Header session={session} />
+      </header>
       <Component {...newPageProps} />
     </div>
   )
