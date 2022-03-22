@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getPostByName } from '../lib/api';
 import { useRedirectToLogin } from '../lib/session'
 import style from '../styles/Profile.module.css'
+import Link from 'next/link'
 
 
 export default function ProfilePage({ session }) {
@@ -24,7 +25,7 @@ export default function ProfilePage({ session }) {
             {posts.map((post) => {
                 return (
                     <article className={`${style.center} ${style.paddingTop} ${style.articleMarginTop}`} key={post.id}>
-                        <p>{post.postDate} <span className={style.box}>{post.text}</span></p>
+                        <p>{post.postDate} <span className={style.box}>{post.text}</span> <span><Link href={`/posts/${post.id}/edit`}>Edit</Link></span></p>
                     </article>
                 )
             })}
