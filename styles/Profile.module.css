@@ -3,24 +3,26 @@
 }
 
 .paddingTop{
-    padding: 0.5%;
+    padding: 0.5rem;
 }
 
 .articleMarginTop{
-    margin-top: 2%;
+    margin-top: 2rem;
 }
 
 .box{
-    background-color: #4fbce0;
-    padding: 1%;
+    border: 2px #4fbce0 solid;
+    padding: 1rem;
     border-radius: 10px;
     transition: transform .2s;
 }
 
 .box:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .pictureSize{
+    margin-top: 1rem;
+    margin-left: 3rem;
     width: 10%;
 }

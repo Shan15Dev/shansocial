@@ -17,6 +17,19 @@
       "password": "$2a$10$XHi3cMEwOyz88GfNj01vvuAZMA9puff0IOzuQdz4GDRXOlcOFV6mW",
       "name": "test3",
       "id": 3
+    },
+    {
+      "email": "admin@admin.ch",
+      "password": "$2a$10$7v6stwiQz3hcw3KPn5PJ.eLqDbgODkyve9vMTl0/8fTVIda7fzlwW",
+      "name": "admin",
+      "id": 4
+    },
+    {
+      "email": "test5@test.ch",
+      "password": "$2a$10$2QNSVosMt9/ZKD52EWgxV.RmwVJZSTpjVzgH6iJfYD7CLuN01Vu/a",
+      "name": "Test",
+      "picturePath": "/f3990120-0db4-4b73-8187-1ec9cc3e9540.jpeg",
+      "id": 5
     }
   ],
   "posts": [
@@ -48,6 +61,14 @@
       "userId": 1,
       "picturePath": "/88b1072c-e4b0-4645-bb7a-d2262b033a3d.jpeg",
       "id": 4
+    },
+    {
+      "text": "Test",
+      "postDate": "2022-3-22",
+      "name": "Test",
+      "userId": 5,
+      "picturePath": "/f8317323-becb-426c-b041-200f75a7000e.jpeg",
+      "id": 5
     }
   ]
 }

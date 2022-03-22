@@ -10,24 +10,38 @@ export default function ProfilePage({ session }) {
 
     const [posts, setPosts] = useState([])
 
+    const [user, setUser] = useState();
+
+    useEffect(() => {
+        if (session.user)
+            setUser(session.user)
+    }, [session])
+
+
     useEffect(async () => {
-        const response = await getPostByName(session.user.name)
+        if (!user) return
+        const response = await getPostByName(user.name)
         setPosts(response)
-    }, [])
+    }, [user])
 
     return (
         <div>
             <header>
-                <title>Profile - {session.user.name}</title>
+                <title>Profile - {user && user.name}</title>
             </header>
-            <h1 className={style.center}>{session.user.name}</h1>
-            <p className={style.center}>{session.user.email}</p>
+
+            <div className={`${style.center}`}>
+                <img src={user && user.picturePath} className={`${style.pictureSize} `} />
+                <h1>{user && user.name}</h1>
+                <p>{user && user.email}</p>
+                </div>
             {posts.map((post) => {
                 return (
-                    <article className={`${style.center} ${style.paddingTop} ${style.articleMarginTop}`} key={post.id}>
-                        <p>{post.postDate} <span className={style.box}>{post.text}</span> <span><Link href={`/posts/${post.id}/edit`}>Edit</Link></span></p>
+                    <article className={`${style.center} ${style.paddingTop} ${style.articleMarginTop} ${style.box}`} key={post.id}>
+                        <Link href={`/posts/${post.id}/edit`}>Edit</Link>
+                        <p>{post.postDate} <span>{post.text}</span> <span></span></p>
                         {post.picturePath &&
-                            <img src={post.picturePath} className={style.pictureSize}/>
+                            <img src={post.picturePath} className={style.pictureSize} />
                         }
                     </article>
                 )
