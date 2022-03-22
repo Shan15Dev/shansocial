@@ -18,7 +18,6 @@ export default function LoginScreen({ session }) {
 
     session.login(resp);
     router.push("/");
-    console.log(session)
   };
 
   const register = (e) => {
