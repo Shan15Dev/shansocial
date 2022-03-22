@@ -1,0 +1,14 @@
+.loginButtons{
+    border: none;
+    background-color: #4287f5;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+
+.marginTop18perc{
+    margin-top: 18%;
+}
